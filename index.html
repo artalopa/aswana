@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aswana - Budaya Jepara</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- font-family: 'Montserrat', sans-serif;
+         font-family: 'Poppins', sans-serif; -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @font-face {
+        font-family: "jawa";
+        src: url(./assets/fonts/kemasyuran_jawa.ttf);
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+
+      .navbar-brand,
+      .footer-brand {
+        font-family: "Kemasyuran jawa", jawa;
+      }
+
+      .nav-item .active {
+        border-bottom: 4px solid black;
+        padding-bottom: 0;
+      }
+
+      #header h1 {
+        font-family: "Montserrat", sans-serif;
+      }
+
+      .preview-article p {
+        text-align: justify;
+      }
+
+      .preview-article a {
+        /* text-decoration: none; */
+        color: white;
+      }
+
+      .footer input,
+      .footer textarea {
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+
+  <body style="background-color: black; color: white">
+    <div
+      class="container-fluid"
+      style="
+        background-image: url(./assets/img/bg_header.png);
+        background-size: cover;
+        background-position-y: bottom;
+      "
+    >
+      <!-- navbar -->
+      <div class="container">
+        <nav class="navbar navbar-expand-lg pt-5">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">ASWANA</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarSupportedContent"
+            >
+              <ul
+                class="navbar-nav me-auto mb-2 mb-lg-0"
+                style="margin: 0 !important"
+              >
+                <div>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      href="./index.html"
+                      >Home</a
+                    >
+                  </li>
+                </div>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Budaya
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Perang Obor</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Tari Kridadjati</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Pesta Lomban</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Kontak</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- end of navbar -->
+
+      <!-- header -->
+      <div
+        class="container-fluid text-center d-flex align-items-center text-dark"
+        id="header"
+        style="height: 120vh"
+      >
+        <div class="w-50 mx-auto">
+          <h1 class="fw-bold">
+            <span class="fs-4">BERKENALAN DENGAN</span><br />
+            <span class="">BUDAYA JEPARA</span>
+          </h1>
+          <p>
+            Jepara merupakan salah satu kabupaten/kota yang ada di Jawa Tengah
+            dengan luas sebesar 24,67 km2. Jepara memiliki beberapa budaya
+            seperti Tari Kridajati, Perang Obor, Pesta Barathan
+          </p>
+
+          <a
+            href="#mainSection"
+            class="text-decoration-none btn btn-primary text-white"
+            style="margin-top: 20vh"
+            >Kenalan lebih jauh, yuk!</a
+          >
+        </div>
+      </div>
+      <!-- end of header -->
+    </div>
+
+    <div
+      class="container"
+      style="max-width: 90vw !important; padding-top: 150px"
+    >
+      <!-- main content -->
+      <div
+        class="container"
+        style="
+          max-width: 70vw !important;
+          padding-top: 150px;
+          background-color: black;
+        "
+        id="mainSection"
+      >
+        <!-- preview images -->
+        <div
+          class="d-flex flex-column flex-sm-row justify-content-between"
+          style="padding-top: 25vh 0"
+        >
+          <img
+            src="./assets/img/1. tari/tari2.jpg"
+            alt="Preview"
+            style="object-fit: cover; width: 32%; border-radius: 25px 0 0 0"
+          />
+          <img
+            src="./assets/img/3. perang obor/obor5.jpg"
+            alt="Preview"
+            style="object-fit: cover; width: 32%"
+          />
+          <img
+            src="./assets/img/2. baratan/baratan7.jpg"
+            alt="Preview"
+            style="object-fit: cover; width: 32%; border-radius: 0 25px 0 0"
+          />
+        </div>
+        <div
+          class="mx-auto justify-content-center"
+          style="display: flex; padding-top: 25px; padding-bottom: 25vh"
+        >
+          <div
+            style="
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
+              background-color: #fe7d60;
+              margin: 0 5px;
+            "
+          ></div>
+          <div
+            style="
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
+              background-color: white;
+              margin: 0 5px;
+            "
+          ></div>
+          <div
+            style="
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
+              background-color: white;
+              margin: 0 5px;
+            "
+          ></div>
+        </div>
+        <!-- end of preview images -->
+
+        <!-- preview article -->
+        <div
+          class="preview-article d-flex flex-column flex-sm-row justify-content-center col-12 mx-auto"
+          style="margin-bottom: 50px"
+        >
+          <div class="me-5">
+            <h3>TARI KRIDAJATI</h3>
+            <p>
+              Tari Kridhajati merupakan salah satu tarian khas jepara yng
+              menggambarkan masyarakat jepara yang adi luhung dalam berkarya
+              seni, dimana seni ukirnyalah yang menjadikan kota jepara terkenal
+              sampai terkenal ke mancanegara. Tari Kridhajati ini dapat
+              ditarikan 1 (satu) orang, berkelompok, dan massal. makna didalam
+              Gerakan tari Kridhajati menggambarkan seseorang yang berjalan -
+              jalan ke hutan belantaran mencari kayu jati yang paling baik
+            </p>
+            <div
+              class="btn text-white text-decoration-underline"
+              style="background-color: #fe7d60; border-radius: 0 15px 0 0"
+            >
+              <a href="./page/tari-kridajati.html">READ MORE</a>
+            </div>
+          </div>
+          <div>
+            <img
+              src="./assets/img/1. tari/tari2.jpg"
+              alt="Preview"
+              class="rounded"
+              width="300"
+              height="300"
+              style="object-fit: cover; border-radius: 100px 0 0 0 !important"
+            />
+          </div>
+        </div>
+
+        <div
+          class="preview-article d-flex flex-column flex-sm-row-reverse justify-content-center col-12 mx-auto"
+          style="margin-bottom: 100px"
+        >
+          <div class="ms-5">
+            <h3>PESTA BARATAN</h3>
+            <p>
+              pesta baratan merupakan salah satu tradisi karnaval dari
+              masyarakat Jepara yang erat kaitannya dengan Ratu Kalinyamat.Kata
+              “baratan” berasal dari sebuah kata Bahasa Arab, yaitu “baraah”
+              yang berarti keselamatan atau “barakah” yang berarti keberkahan.
+              Tradisi Pesta Baratan rutin dilaksanakan setiap tanggal 15 Sya'ban
+              (kalender Hijriyah) atau 15 Ruwah (kalender Jawa) yang bertepatan
+              dengan malam Nisfu Sya'ban.Tradisi baratan berkaitan erat dengan
+              peristiwa pembunuhan Sultan Hadirin , suami Ratu Kalinyamat, yang
+              dilakukan oleh Arya Penangsang.
+            </p>
+            <div
+              class="btn text-white text-decoration-underline"
+              style="background-color: #fe7d60; border-radius: 0 15px 0 0"
+            >
+              <a href="./page/pesta-baratan.html">READ MORE</a>
+            </div>
+          </div>
+          <div>
+            <img
+              src="./assets/img/2. baratan/baratan7.jpg"
+              alt="Preview"
+              class="rounded"
+              width="300"
+              height="300"
+              style="object-fit: cover; border-radius: 0 100px 0 0 !important"
+            />
+          </div>
+        </div>
+
+        <div
+          class="preview-article d-flex flex-column flex-sm-row justify-content-center col-12 mx-auto"
+          style="margin-bottom: 100px"
+        >
+          <div class="me-5">
+            <h3>PERANG OBOR</h3>
+            <p>
+              Perang Obor atau disebut juga obor-oboran, merupakan salah satu
+              upacara tradisional yang dimiliki oleh masyarakat Jepara,
+              khususnya Desa Tegalsambi, Kecamatan Tahunan.Perang Obor rutin
+              digelar setiap pada Senin Pahing, malam Selasa Pon di Bulan
+              Dzulhijjah dalam kalender Jawa atau Arab. Obor pada upacara
+              tradisional ini adalah gulungan atau bendelan 2 (dua) atau 3
+              (tiga) pelepah kelapa yang sudah kering dan bagian dalamnya diisi
+              dengan daun pisang kering.
+            </p>
+            <div
+              class="btn text-white text-decoration-underline"
+              style="background-color: #fe7d60; border-radius: 0 15px 0 0"
+            >
+              <a href="./page/perang-obor.html">READ MORE</a>
+            </div>
+          </div>
+          <div>
+            <img
+              src="./assets/img/3. perang obor/obor5.jpg"
+              alt="Preview"
+              class="rounded"
+              width="300"
+              height="300"
+              style="object-fit: cover; border-radius: 100px 0 0 0 !important"
+            />
+          </div>
+        </div>
+        <!-- end of preview article -->
+
+        <!-- about us -->
+        <div style="padding: 150px 0 200px 0">
+          <h1 class="text-center">ABOUT US</h1>
+          <div
+            class="d-flex flex-column flex-sm-row justify-content-between"
+            style="padding: 20px 0"
+          >
+            <!-- <img src="./assets/img/ryan.jpg" alt="Ryan"
+          style="object-fit: cover; width: 32%; border-radius: 25px 0 0 0;" /> -->
+            <div
+              class="d-flex align-items-end"
+              style="
+                background-image: url(./assets/img/ryan.jpg);
+                background-size: cover;
+                background-position-y: center;
+                overflow: hidden;
+                width: 32%;
+                border-radius: 25px 0 0 0;
+              "
+            >
+              <h3
+                class="mx-auto btn text-white"
+                style="background-color: #fe7d60"
+              >
+                Ryan
+              </h3>
+            </div>
+            <div
+              class="d-flex align-items-end"
+              style="
+                background-image: url(./assets/img/faisal.png);
+                background-size: cover;
+                background-position-y: center;
+                overflow: hidden;
+                width: 32%;
+                border-radius: 0 0 0 0;
+              "
+            >
+              <h3
+                class="mx-auto btn text-white"
+                style="background-color: #fe7d60"
+              >
+                Faisal
+              </h3>
+            </div>
+            <img
+              src="./assets/img/2. baratan/baratan7.jpg"
+              alt="Preview"
+              style="object-fit: cover; width: 32%; border-radius: 0 25px 0 0"
+            />
+          </div>
+        </div>
+        <!-- end of about us -->
+      </div>
+      <!-- end of main content -->
+
+      <!-- footer -->
+      <div
+        class="container d-flex justify-content-between footer"
+        style="padding-bottom: 150px"
+      >
+        <div class="left" style="width: 45%">
+          <form action="" method="post">
+            <h2>CONTACT US</h2>
+            <input
+              class="form-control"
+              type="text"
+              name="nama"
+              id=""
+              placeholder="Full Name"
+            />
+            <input
+              class="form-control"
+              type="email"
+              name="email"
+              id=""
+              placeholder="Email Address"
+            />
+            <textarea
+              class="form-control"
+              name="message"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Your Message"
+            ></textarea>
+            <input class="btn btn-light" type="submit" value="Submit" />
+          </form>
+        </div>
+
+        <div class="right d-flex flex-column" style="width: 45%">
+          <h2 class="footer-brand">ASWANA</h2>
+          <p style="text-align: justify">
+            Merupakan suatu kumpulan dalam satu tempat yang memiliki tujuan yang
+            sama
+          </p>
+          <p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-6 h-6"
+              style="width: 20px"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            0897 4847 8272
+          </p>
+          <p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="w-6 h-6"
+              style="width: 20px"
+            >
+              <path
+                d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z"
+              />
+              <path
+                d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"
+              />
+            </svg>
+            aswana@corp.com
+          </p>
+        </div>
+      </div>
+      <!-- end of footer -->
+    </div>
+    <!-- copyryght -->
+    <div class="d-flex" style="padding: 20px 0; background-color: #fe7d60">
+      <p class="mx-auto" style="margin: 0">
+        COPYRIGHT 2023 @ASWANA CORPORATION
+      </p>
+    </div>
+    <!-- end of copyright -->
+  </body>
+</html>
