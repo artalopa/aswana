@@ -61,6 +61,21 @@
       .footer textarea {
         margin: 10px 0;
       }
+
+      /* X-Large devices (large desktops, 1200px and up) */
+      @media (min-width: 1200px) {
+        #header {
+          height: 120vh;
+        }
+
+        #preview-images .col {
+          display: block;
+        }
+
+        #mainSection {
+          max-width: 70vw !important;
+        }
+      }
     </style>
   </head>
 
@@ -75,8 +90,8 @@
       "
     >
       <!-- navbar -->
-      <div class="container">
-        <nav class="navbar navbar-expand-lg pt-5">
+      <div class="container px-0">
+        <nav class="navbar navbar-expand-lg pt-3 pt-xl-5">
           <div class="container-fluid">
             <a class="navbar-brand" href="./index.html">ASWANA</a>
             <button
@@ -152,7 +167,7 @@
       <div
         class="container-fluid text-center d-flex align-items-center text-dark"
         id="header"
-        style="height: 120vh"
+        style="height: 100vh"
       >
         <div class="w-50 mx-auto">
           <h1 class="fw-bold">
@@ -177,21 +192,17 @@
     </div>
 
     <div
-      class="container"
+      class="container px-0"
       style="max-width: 90vw !important; padding-top: 150px"
     >
       <!-- main content -->
       <div
         class="container"
-        style="
-          max-width: 70vw !important;
-          padding-top: 150px;
-          background-color: black;
-        "
+        style="padding-top: 150px; background-color: black"
         id="mainSection"
       >
         <!-- preview images -->
-        <div class="row" style="padding-top: 25vh 0">
+        <div class="row" id="preview-images" style="padding-top: 25vh 0">
           <div class="col">
             <img
               src="./assets/img/1. tari/tari2.jpg"
@@ -262,10 +273,10 @@
 
         <!-- preview article -->
         <div
-          class="preview-article d-flex flex-column flex-sm-row justify-content-center col-12 mx-auto"
+          class="preview-article d-flex flex-column-reverse flex-lg-row justify-content-center col-12 mx-auto"
           id="tari-kridajati"
         >
-          <div class="me-5">
+          <div class="me-lg-5">
             <h3>TARI KRIDAJATI</h3>
             <p>
               Tari Kridhajati merupakan salah satu tarian khas jepara yng
@@ -277,18 +288,19 @@
               jalan ke hutan belantaran mencari kayu jati yang paling baik
             </p>
             <div
-              class="btn text-white text-decoration-underline"
+              class="btn text-white"
               style="background-color: #fe7d60; border-radius: 0 15px 0 0"
             >
-              <a href="./page/tari-kridajati.html">READ MORE</a>
+              <a class="text-decoration-none" href="./page/tari-kridajati.html"
+                >READ MORE</a
+              >
             </div>
           </div>
-          <div>
+          <div class="col-lg-5">
             <img
               src="./assets/img/1. tari/tari2.jpg"
               alt="Preview"
-              class="rounded"
-              width="300"
+              class="rounded w-100 pb-3"
               height="300"
               style="object-fit: cover; border-radius: 100px 0 0 0 !important"
             />
@@ -296,13 +308,13 @@
         </div>
 
         <div
-          class="preview-article d-flex flex-column flex-sm-row-reverse justify-content-center col-12 mx-auto"
+          class="preview-article d-flex flex-column-reverse flex-lg-row-reverse justify-content-center col-12 mx-auto"
           id="pesta-baratan"
         >
-          <div class="ms-5">
+          <div class="ms-lg-5">
             <h3>PESTA BARATAN</h3>
             <p>
-              pesta baratan merupakan salah satu tradisi karnaval dari
+              Pesta baratan merupakan salah satu tradisi karnaval dari
               masyarakat Jepara yang erat kaitannya dengan Ratu Kalinyamat.Kata
               “baratan” berasal dari sebuah kata Bahasa Arab, yaitu “baraah”
               yang berarti keselamatan atau “barakah” yang berarti keberkahan.
@@ -313,18 +325,19 @@
               dilakukan oleh Arya Penangsang.
             </p>
             <div
-              class="btn text-white text-decoration-underline"
+              class="btn text-white"
               style="background-color: #fe7d60; border-radius: 0 15px 0 0"
             >
-              <a href="./page/pesta-baratan.html">READ MORE</a>
+              <a class="text-decoration-none" href="./page/pesta-baratan.html"
+                >READ MORE</a
+              >
             </div>
           </div>
-          <div>
+          <div class="col-lg-5">
             <img
               src="./assets/img/2. baratan/baratan7.jpg"
               alt="Preview"
-              class="rounded"
-              width="300"
+              class="rounded w-100 pb-3"
               height="300"
               style="object-fit: cover; border-radius: 0 100px 0 0 !important"
             />
@@ -332,10 +345,10 @@
         </div>
 
         <div
-          class="preview-article d-flex flex-column flex-sm-row justify-content-center col-12 mx-auto"
+          class="preview-article d-flex flex-column-reverse flex-lg-row justify-content-center col-12 mx-auto"
           id="perang-obor"
         >
-          <div class="me-5">
+          <div class="me-lg-5">
             <h3>PERANG OBOR</h3>
             <p>
               Perang Obor atau disebut juga obor-oboran, merupakan salah satu
@@ -348,18 +361,19 @@
               dengan daun pisang kering.
             </p>
             <div
-              class="btn text-white text-decoration-underline"
+              class="btn text-white"
               style="background-color: #fe7d60; border-radius: 0 15px 0 0"
             >
-              <a href="./page/perang-obor.html">READ MORE</a>
+              <a class="text-decoration-none" href="./page/perang-obor.html"
+                >READ MORE</a
+              >
             </div>
           </div>
-          <div>
+          <div class="col-lg-5">
             <img
               src="./assets/img/3. perang obor/obor5.jpg"
               alt="Preview"
-              class="rounded"
-              width="300"
+              class="rounded w-100 pb-3"
               height="300"
               style="object-fit: cover; border-radius: 100px 0 0 0 !important"
             />
