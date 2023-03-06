@@ -78,6 +78,24 @@
         margin: 10px 0;
       }
 
+      #up {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 99;
+        border: none;
+        outline: none;
+        background-color: #0a101a;
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 20px 0 0 0;
+      }
+
+      #up img {
+        width: 30px;
+      }
+
       /* X-Large devices (large desktops, 1200px and up) */
       @media (min-width: 1200px) {
         #mainSection {
@@ -341,5 +359,35 @@
       </p>
     </div>
     <!-- end of copyright -->
+
+    <!-- up button -->
+    <button onclick="toTop()" id="up">
+      <img src="./assets/img/up.png" alt="UP" />
+    </button>
+
+    <script>
+      var upButton = document.getElementById("up");
+
+      window.onscroll = function () {
+        scroll();
+      };
+
+      function scroll() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          upButton.style.display = "block";
+        } else {
+          upButton.style.display = "none";
+        }
+      }
+
+      function toTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    <!-- end of up button -->
   </body>
 </html>
