@@ -44,6 +44,10 @@
         font-family: "Montserrat", sans-serif;
       }
 
+      #mainSection {
+        padding-top: 50px;
+      }
+
       #main-article h1 {
         margin-bottom: 25px;
       }
@@ -53,12 +57,28 @@
       }
 
       #main-article .row {
-        margin-bottom: 10vw;
+        margin-bottom: 20px;
+      }
+      #contactBg {
+        margin-top: -50px;
+        width: 100%;
       }
 
       .footer input,
       .footer textarea {
         margin: 10px 0;
+      }
+
+      /* X-Large devices (large desktops, 1200px and up) */
+      @media (min-width: 1200px) {
+        #mainSection {
+          max-width: 60vw !important;
+          padding-top: 100px;
+        }
+
+        #contactBg {
+          margin-top: -200px;
+        }
       }
     </style>
   </head>
@@ -70,8 +90,8 @@
       "
     >
       <!-- navbar -->
-      <div class="container">
-        <nav class="navbar navbar-expand-lg pt-5">
+      <div class="container px-0">
+        <nav class="navbar navbar-expand-lg pt-3 pt-lg-5">
           <div class="container-fluid">
             <a class="navbar-brand" href="../index.html">ASWANA</a>
             <button
@@ -140,35 +160,32 @@
 
       <!-- end of navbar -->
 
-      <div
-        class="container"
-        style="max-width: 60vw !important; padding-top: 150px"
-      >
+      <div class="container" id="mainSection">
         <!-- main content -->
         <div class="container position-relative" id="main-article">
           <h1>PERANG OBOR</h1>
           <div class="row">
-            <div class="col">
-              <p style="width: 80%">
+            <div class="col-12 col-lg-6">
+              <p>
                 Perang Obor atau disebut juga obor-oboran, merupakan salah satu
                 upacara tradisional yang dimiliki oleh masyarakat Jepara,
                 khususnya Desa Tegalsambi, Kecamatan Tahunan.Perang Obor rutin
                 digelar setiap pada Senin Pahing, malam Selasa Pon di Bulan
                 Dzulhijjah dalam kalender Jawa atau Arab.
               </p>
-              <p style="width: 80%">
+              <p>
                 Obor pada upacara tradisional ini adalah gulungan atau bendelan
                 2 (dua) atau 3 (tiga) pelepah kelapa yang sudah kering dan
                 bagian dalamnya diisi dengan daun pisang kering.
               </p>
-              <p style="width: 80%">
+              <p>
                 Obor yang telah tersedia dinyalakan bersama untuk digunakan
                 sebagai alat untuk saling menyerang sehingga sering terjadi
                 benturan-benturan obor yang dapat mengakibatkan pijaran-pijaran
                 api yang besar.
               </p>
             </div>
-            <div class="col">
+            <div class="col-12 col-lg-6">
               <img
                 src="../assets/img/3. perang obor/obor1.jpg"
                 alt="Perang Obor"
@@ -178,26 +195,28 @@
           </div>
 
           <div class="row">
-            <div class="col">
+            <div class="col-12 col-lg-6 pb-3 pb-lg-0">
               <img
                 src="../assets/img/3. perang obor/obor4.jpg"
-                alt="Tari Kridajati"
+                alt="Perang obor"
                 style="width: 100%"
               />
             </div>
-            <div class="col">
-              <p style="width: 80%; float: right">
+            <div class="col-12 col-lg-6">
+              <p>
                 Upacara ini didasarkan atas legenda Ki Gemblong yang dipercaya
                 oleh Kyai Babadan untuk merawat dan menggembalakan ternaknya.
                 Namun karena terlena dengan ikan dan udang di sungai, ternak
                 tersebut terlupakan sehingga sakit atau mati. Kyai Babadan yang
                 tidak terima dengan kelalaian Ki Gemblong, memukul Ki Gemblong
-                dengan obor dari pelapah kelapa. Akibatnya ia menggunakan obor
-                serupa untuk membela diri. Tanpa diduga, benturan kedua obor
-                menyebarkan api di tumpukan jerami di sebelah kandang. Ternak
-                yang awalnya sakit tiba-tiba menjadi sembuh. Kepercayaan
-                terhadap api obor yang mampu mendatangkan kesehatan dan menolak
-                bala.
+                dengan obor dari pelapah kelapa.
+              </p>
+              <p>
+                Akibatnya ia menggunakan obor serupa untuk membela diri. Tanpa
+                diduga, benturan kedua obor menyebarkan api di tumpukan jerami
+                di sebelah kandang. Ternak yang awalnya sakit tiba-tiba menjadi
+                sembuh. Kepercayaan terhadap api obor yang mampu mendatangkan
+                kesehatan dan menolak bala.
               </p>
             </div>
           </div>
@@ -205,10 +224,7 @@
         <!-- end of main content -->
       </div>
 
-      <img
-        src="../assets/img/contact_bg.png"
-        style="width: 100%; margin-top: -200px"
-      />
+      <img src="../assets/img/contact_bg.png" id="contactBg" />
     </div>
 
     <div
