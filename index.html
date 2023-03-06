@@ -44,6 +44,10 @@
         font-family: "Montserrat", sans-serif;
       }
 
+      .preview-article {
+        padding: 50px 0;
+      }
+
       .preview-article p {
         text-align: justify;
       }
@@ -67,6 +71,7 @@
         background-image: url(./assets/img/bg_header.png);
         background-size: cover;
         background-position-y: bottom;
+        background-position-x: center;
       "
     >
       <!-- navbar -->
@@ -115,15 +120,25 @@
                     Budaya
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Perang Obor</a></li>
                     <li>
-                      <a class="dropdown-item" href="#">Tari Kridadjati</a>
+                      <a class="dropdown-item" href="#perang-obor"
+                        >Perang Obor</a
+                      >
                     </li>
-                    <li><a class="dropdown-item" href="#">Pesta Lomban</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#tari-kridajati"
+                        >Tari Kridadjati</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#pesta-baratan"
+                        >Pesta Baratan</a
+                      >
+                    </li>
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Kontak</a>
+                  <a class="nav-link" href="#kontak">Kontak</a>
                 </li>
               </ul>
             </div>
@@ -198,7 +213,7 @@
         </div>
         <div
           class="mx-auto justify-content-center"
-          style="display: flex; padding-top: 25px; padding-bottom: 25vh"
+          style="display: flex; padding-top: 25px; padding-bottom: 150px"
         >
           <div
             style="
@@ -233,7 +248,7 @@
         <!-- preview article -->
         <div
           class="preview-article d-flex flex-column flex-sm-row justify-content-center col-12 mx-auto"
-          style="margin-bottom: 50px"
+          id="tari-kridajati"
         >
           <div class="me-5">
             <h3>TARI KRIDAJATI</h3>
@@ -267,7 +282,7 @@
 
         <div
           class="preview-article d-flex flex-column flex-sm-row-reverse justify-content-center col-12 mx-auto"
-          style="margin-bottom: 100px"
+          id="pesta-baratan"
         >
           <div class="ms-5">
             <h3>PESTA BARATAN</h3>
@@ -303,7 +318,7 @@
 
         <div
           class="preview-article d-flex flex-column flex-sm-row justify-content-center col-12 mx-auto"
-          style="margin-bottom: 100px"
+          id="perang-obor"
         >
           <div class="me-5">
             <h3>PERANG OBOR</h3>
@@ -397,6 +412,7 @@
       <div
         class="container d-flex justify-content-between footer"
         style="padding-bottom: 150px"
+        id="kontak"
       >
         <div class="left" style="width: 45%">
           <form action="" method="post">
