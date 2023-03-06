@@ -44,6 +44,10 @@
         font-family: "Montserrat", sans-serif;
       }
 
+      #mainSection {
+        padding-top: 50px;
+      }
+
       #main-article h1 {
         margin-bottom: 25px;
       }
@@ -53,12 +57,29 @@
       }
 
       #main-article .row {
-        margin-bottom: 10vw;
+        margin-bottom: 20px;
+      }
+
+      #contactBg {
+        margin-top: -50px;
+        width: 100%;
       }
 
       .footer input,
       .footer textarea {
         margin: 10px 0;
+      }
+
+      /* X-Large devices (large desktops, 1200px and up) */
+      @media (min-width: 1200px) {
+        #mainSection {
+          max-width: 60vw !important;
+          padding-top: 100px;
+        }
+
+        #contactBg {
+          margin-top: -200px;
+        }
       }
     </style>
   </head>
@@ -70,8 +91,8 @@
       "
     >
       <!-- navbar -->
-      <div class="container">
-        <nav class="navbar navbar-expand-lg pt-5">
+      <div class="container px-0">
+        <nav class="navbar navbar-expand-lg pt-3 pt-lg-5">
           <div class="container-fluid">
             <a class="navbar-brand" href="../index.html">ASWANA</a>
             <button
@@ -140,19 +161,15 @@
 
       <!-- end of navbar -->
 
-      <div
-        class="container"
-        style="max-width: 60vw !important; padding-top: 150px"
-      >
+      <div class="container" id="mainSection">
         <!-- main content -->
         <div class="container position-relative" id="main-article">
           <h1>PESTA BARATAN</h1>
-          <div class="d-flex">
+          <div class="row">
             <img
-              class="mx-auto"
+              class="col-12 col-lg-8 mx-auto"
               src="../assets/img/2. baratan/baratan1.jpg"
               alt="Pesta Baratan"
-              style="width: 70%; margin-bottom: 10vw"
             />
           </div>
 
@@ -169,15 +186,16 @@
           </div>
 
           <div class="row">
-            <div class="col">
+            <div class="col-12 col-lg-6">
               <img
+                class="mb-3 mb-lg-0"
                 src="../assets/img/2. baratan/baratan7.jpg"
                 alt="Pesta Baratan"
                 style="width: 100%"
               />
             </div>
-            <div class="col">
-              <p style="width: 80%; float: right">
+            <div class="col-12 col-lg-6">
+              <p>
                 Tradisi baratan berkaitan erat dengan peristiwa pembunuhan
                 Sultan Hadirin , suami Ratu Kalinyamat, yang dilakukan oleh Arya
                 Penangsang. Konon pada waktu itu terjadi saat menyambut
@@ -189,8 +207,8 @@
           </div>
 
           <div class="row">
-            <div class="col">
-              <p style="width: 80%">
+            <div class="col-12 col-lg-6">
+              <p>
                 Sebelum Pawai Baratan dimulai masyarakat membaca surat Yasin
                 tiga kali dan membaca do'a Nisfu Sya'ban, yang di pimpin oleh
                 kyai atau ulama setempat di masjid/mushola secara berjama'ah.
@@ -198,10 +216,10 @@
                 melepas arak-arakan.
               </p>
             </div>
-            <div class="col">
+            <div class="col-12 col-lg-6">
               <img
                 src="../assets/img/2. baratan/baratan3.jpg"
-                alt="Tari Kridajati"
+                alt="Pesta Baratan"
                 style="width: 100%"
               />
             </div>
@@ -223,10 +241,7 @@
         <!-- end of main content -->
       </div>
 
-      <img
-        src="../assets/img/contact_bg.png"
-        style="width: 100%; margin-top: -200px"
-      />
+      <img id="contactBg" src="../assets/img/contact_bg.png" />
     </div>
 
     <div
