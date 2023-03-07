@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "jawa";
+  src: url(../assets/fonts/kemasyuran_jawa.ttf);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif !important;
+}
+
+.navbar-toggler {
+  border: none !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+.navbar-brand,
+.footer-brand {
+  font-family: "Kemasyuran jawa", jawa;
+}
+
+.nav-item .active {
+  border-bottom: 4px solid black;
+  padding-bottom: 0;
+}
+
+#header h1 {
+  font-family: "Montserrat", sans-serif;
+}
+
+#mainSection {
+  padding-top: 50px;
+}
+
+#main-article h1 {
+  margin-bottom: 25px;
+}
+
+#main-article p {
+  text-align: justify;
+}
+
+#main-article .row {
+  margin-bottom: 20px;
+}
+
+#preview-images {
+  padding: 45vh 0;
+}
+
+.preview-article {
+  padding: 50px 0;
+}
+
+.preview-article p {
+  text-align: justify;
+}
+
+.preview-article a {
+  color: white;
+}
+
+#aboutUs .btn {
+  cursor: default;
+}
+
+#contactBg {
+  margin-top: -50px;
+  width: 100%;
+}
+
+.footer input,
+.footer textarea {
+  margin: 10px 0;
+}
+
+#up {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 0;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #0a101a;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px 0 0 10px;
+}
+
+#up img {
+  width: 30px;
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  #mainSection {
+    max-width: 60vw !important;
+    padding-top: 100px;
+  }
+
+  #contactBg {
+    margin-top: -200px;
+  }
+}
